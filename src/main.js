@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
 
+Vue.prototype.$ajax = axios   //axios不是vue的插件,不可以用use
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
